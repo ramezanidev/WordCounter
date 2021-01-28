@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordCounter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+    <div class="container">
+        <!-- box -->
+        <div class="cover">
+            <!-- cover--header -->
+            <header>
+                <!-- title -->
+                <div class="title">شمارش تعداد کلمات | حروف</div>
+                <div class="text_container">
+                    <!-- textarea and submit button -->
+                    <textarea id="text_box" placeholder="متن خود را وارد کنید" autofocus></textarea>
+                    <!-- options -->
+                    <div class="option">
+                        <div>
+                            <label for="number_checkbox">محاسبه شامل اعداد باشد.</label>
+                            <div class="check_box">
+                                <input type="checkbox" id="number_checkbox" >
+                                <span></span>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="symbol_checkbox">محاسبه شامل کاراکتر (.+-=&..) باشد.</label>
+                            <div class="check_box">
+                                <input type="checkbox" id="symbol_checkbox">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="EN_checkbox">محاسبه شامل حروف انگلیسی باشد.</label>
+                            <div class="check_box">
+                                <input type="checkbox" id="EN_checkbox" >
+                                <span></span>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="Tanwin_checkbox">محاسبه شامل (...-ً -ِ -َ) باشد.</label>
+                            <div class="check_box">
+                                <input type="checkbox" id="Tanwin_checkbox">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="submit">شمارش حروف و کلمات</button>
+                    <!-- toll bar -->
+                    <div class="tool_bar">
+                        <!-- toll bar btns -->
+                        <button class="pasteText"><i class="material-icons">content_paste</i></button>
+                        <button class="clearAll"><i class="material-icons">clear_all</i></button>
+                        <button class="selectAll"><i class="material-icons">select_all</i></button>
+                        <button class="copyAll"><i class="material-icons">content_copy</i></button>
+                    </div>
+                </div>
+            </header>
+            <!-- result box -->
+            <div class="result_container" >
+                <!-- result table _!_ -->
+                <ul class="result">
+                    <div class="result_title">نتیجه محاسبه</div>
+                    <li>
+                        <div>
+                            <i class="material-icons">info_outline</i>
+                            <span>تعداد کلمات :</span>
+                        </div>
+                        <div>
+                            <b class="word_data"></b>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="material-icons">info_outline</i>
+                            <span>تعداد کلمات بدون فاصله :</span>
+                        </div>
+                        <div>
+                            <b class="word_nospace_data"></b>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="material-icons">info_outline</i>
+                            <span>تعداد حروف :</span>
+                        </div>
+                        <div>
+                            <b class="Letters_data"></b>
+                        </div>
+                    </li>
+                </ul>
+                 <!-- result table _2_ -->
+                 <ul class="result">
+                    <div class="result_title">اطلاعات بیشتر</div>
+                    <li>
+                        <div>
+                            <i class="material-icons">info_outline</i>
+                            <span>تعداد جمله :</span>
+                        </div>
+                        <div>
+                            <b class="Sentences_data"></b>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="material-icons">info_outline</i>
+                            <span>تعداد پاراگراف :</span>
+                        </div>
+                        <div>
+                            <b class="Paragraphs_data"></b>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="material-icons">info_outline</i>
+                            <span>تعداد کاراکتر :</span>
+                        </div>
+                        <div>
+                            <b class="Characters_data"></b>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="material-icons">info_outline</i>
+                            <span>تعداد شماره ها :</span>
+                        </div>
+                        <div>
+                            <b class="number_data"></b>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="material-icons">info_outline</i>
+                            <span>موارد غیر قابل قبول :</span>
+                        </div>
+                        <div>
+                            <b class="remove_data"></b>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- scroll top btn -->
+        <button class="scroll_top scroll_top_hide"><i class="material-icons">keyboard_arrow_up</i></button>
+    </div>
+</body>
+
+
+
+
+    <!-- scripts link -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="js/script.js"></script>
+</html>
